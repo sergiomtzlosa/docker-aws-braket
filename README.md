@@ -16,7 +16,7 @@ Pull the image from docker hub:
 docker pull sergiomtzlosa/braket:latest
 ```
 
-Use the docker-compose-yml file to start the image:
+Use the docker-compose.yml file to start the image:
 
 ```
 version: "2"
