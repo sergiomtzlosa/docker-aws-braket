@@ -6,11 +6,13 @@ Place your browser at http://YOUR_IP:8339
 
 Default image on docker hub is production environment:
 
-https://hub.docker.com/repository/docker/sergiomtzlosa/qiskit
+https://hub.docker.com/r/sergiomtzlosa/braket
 
 Pull the image from docker hub:
 
+```
 docker pull sergiomtzlosa/braket:latest
+```
 
 Use the docker-compose-yml file to start the image:
 
@@ -18,11 +20,8 @@ Use the docker-compose-yml file to start the image:
 version: "2"
 services:
   amazon-braket:
-    image: aws-amazon-braket
+    image: sergiomtzlosa/braket:latest
     container_name: aws-braket-container
-    build:
-      context: ./
-      dockerfile: ./Dockerfile # production environment
     environment:
       - PUID=1000
       - PGID=1000
