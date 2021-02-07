@@ -33,7 +33,7 @@ RUN pip3 install dwave-ocean-sdk amazon-braket-ocean-plugin jupyterlab
 RUN pip install keras pandas xlrd seaborn scikit-learn matplotlib opencv-python tqdm pillow \
                 image scipy regex cffi pylatexenc tikz2graphml plotly==4.14.1 --use-deprecated=legacy-resolver
 
-RUN mkdir -p aws-braket-jupyter && cd aws-braket-jupyter &&  git clone https://github.com/aws/amazon-braket-examples.git
+#RUN mkdir -p aws-braket-jupyter && cd aws-braket-jupyter &&  git clone https://github.com/aws/amazon-braket-examples.git
 
 # SET ROOT PERMISSION FOR ALL USERS
 RUN chown -R $BRAKET_USER:$BRAKET_USER /home/$BRAKET_USER/
