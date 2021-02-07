@@ -1,6 +1,6 @@
 ## Docker image for AWS Braket
 
-Docker image to run the AWS Braket on Jupyter with local and remote backend.
+Docker image to run the AWS Braket on Jupyter with local and remote backend and AWS CLI.
 
 Place your browser at http://YOUR_IP:8339
 
