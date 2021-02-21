@@ -27,7 +27,7 @@ RUN pip3 install boto3
 RUN git clone https://github.com/aws/amazon-braket-sdk-python.git && cd amazon-braket-sdk-python && \
     pip install .
 
-RUN pip3 install dwave-ocean-sdk amazon-braket-ocean-plugin jupyterlab
+RUN pip3 install dwave-ocean-sdk amazon-braket-ocean-plugin jupyterlab amazon-braket-pennylane-plugin
 
 # FINISHING PACKAGES
 RUN pip install keras pandas xlrd seaborn scikit-learn matplotlib opencv-python tqdm pillow \
